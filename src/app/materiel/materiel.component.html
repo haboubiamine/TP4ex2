@@ -1,0 +1,8 @@
+<div  class="col-lg-2">
+<ul  class="list-group">
+    <li [ngClass]="{' list-group-item list-group-item-success':check()==1}">
+        {{nom}} <br>
+      <img src="{{image}}" whidth="70" height="70">referance: {{reference}} <input type="text" value="{{prix}}" disabled > etat:{{repare}}<span *ngIf="check()==1"><button (click)=repareitem() class="btn btn-success">réparé</button></span>
+    </li>
+</ul>
+</div>
